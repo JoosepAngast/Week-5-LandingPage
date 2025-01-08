@@ -1,3 +1,6 @@
+Siin on sinu CSS-kood, millele on lisatud kohandused mobiilse ja tahvelarvuti vaate jaoks, kasutades meedia päringuid:
+
+```css
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -35,11 +38,11 @@ body {
 }
 
 .intro-image__link a:hover {
-    transform: scale(1.2)
+    transform: scale(1.2);
 }
 
 .intro-text {
-     background-color:  #7a5747;
+    background-color: #7a5747;
     color: #e2cfbf;
     display: flex;
     align-items: center;
@@ -53,6 +56,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
+
 .quality-image {
     background-attachment: fixed;
     background-image: url(../img/image5.jpg);
@@ -77,11 +81,11 @@ body {
 }
 
 .quality-image__link a:hover {
-    transform: scale(1.2)
+    transform: scale(1.2);
 }
 
 .quality-text {
-    background-color:  #ce9550;
+    background-color: #ce9550;
     color: #abdbe3;
     display: flex;
     align-items: center;
@@ -120,11 +124,11 @@ body {
 }
 
 .origin-image__link a:hover {
-    transform: scale(1.2)
+    transform: scale(1.2);
 }
 
 .origin-text {
-    background-color:  #6f574d;
+    background-color: #6f574d;
     color: #7b8e9e;
     display: flex;
     align-items: center;
@@ -152,6 +156,44 @@ body {
 }
 
 .footer ul li a:hover {
-
     color: darkgoldenrod;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .intro-text, .quality-text, .origin-text {
+        padding: 0 10%;
+    }
+
+    .intro-image__link a, .quality-image__link a, .origin-image__link a {
+        font-size: 2rem;
+        padding: 1.5rem;
+    }
+
+    .intro-text__textbox h3, .quality-text__textbox h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-image, .quality-image, .origin-image {
+        height: 200px;
+    }
+
+    .intro-text, .quality-text, .origin-text {
+        height: auto;
+        padding: 0 5%;
+    }
+
+    .intro-text__textbox h3, .quality-text__textbox h3 {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
 }
